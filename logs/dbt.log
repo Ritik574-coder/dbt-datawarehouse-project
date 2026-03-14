@@ -1,0 +1,147 @@
+[0m19:28:04.626264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d739502630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d73b0f2ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d738f32180>]}
+
+
+============================== 19:28:04.636486 | 8b603be5-5fbe-4d66-ae60-45b5910d8a5e ==============================
+[0m19:28:04.636486 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:28:04.638028 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'profiles_dir': '/home/ritik/.dbt', 'printer_width': '80', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'quiet': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test', 'version_check': 'True', 'target_path': 'None', 'write_json': 'True', 'empty': 'None', 'no_print': 'None', 'cache_selected_only': 'False'}
+[0m19:28:04.639216 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:28:04.641512 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.11849618, "process_in_blocks": "51528", "process_kernel_time": 0.46699, "process_mem_max_rss": "115944", "process_out_blocks": "8", "process_user_time": 5.185994}
+[0m19:28:04.642521 [debug] [MainThread]: Command `dbt test` failed at 19:28:04.642352 after 0.12 seconds
+[0m19:28:04.643405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d738d856d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d739502630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d73913fe00>]}
+[0m19:28:04.644545 [debug] [MainThread]: Flushing usage events
+[0m19:28:16.612343 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:29:03.905907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750959cb2660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750959cb1430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750959471f10>]}
+
+
+============================== 19:29:03.912869 | 173d7938-6fe0-4222-963b-d806c84be3ae ==============================
+[0m19:29:03.912869 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:29:03.914472 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/ritik/.dbt', 'cache_selected_only': 'False', 'quiet': 'False', 'invocation_command': 'dbt debug', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error': 'None', 'no_print': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'debug': 'False', 'log_format': 'default', 'write_json': 'True'}
+[0m19:29:03.957400 [info ] [MainThread]: dbt version: 1.11.6
+[0m19:29:03.958634 [info ] [MainThread]: python version: 3.12.3
+[0m19:29:03.959674 [info ] [MainThread]: python path: /home/ritik/python/bin/python3
+[0m19:29:03.960676 [info ] [MainThread]: os info: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+[0m19:29:04.345497 [info ] [MainThread]: Using profiles dir at /home/ritik/.dbt
+[0m19:29:04.346427 [info ] [MainThread]: Using profiles.yml file at /home/ritik/.dbt/profiles.yml
+[0m19:29:04.347266 [info ] [MainThread]: Using dbt_project.yml file at /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+[0m19:29:04.348273 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:29:04.350002 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.55114186, "process_in_blocks": "7064", "process_kernel_time": 0.419101, "process_mem_max_rss": "131992", "process_out_blocks": "16", "process_user_time": 5.099062}
+[0m19:29:04.351260 [debug] [MainThread]: Command `dbt debug` failed at 19:29:04.351093 after 0.55 seconds
+[0m19:29:04.352123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750959c2acc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750959146ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750958f74d10>]}
+[0m19:29:04.353150 [debug] [MainThread]: Flushing usage events
+[0m19:29:06.346344 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:30:45.578654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9618686f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9617bbf620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a961a163dd0>]}
+
+
+============================== 19:30:45.584123 | 2eef32ef-dc2d-4ce3-bbe5-cf837f724a44 ==============================
+[0m19:30:45.584123 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:30:45.585290 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'profiles_dir': '/home/ritik/.dbt', 'introspect': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error': 'None', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'log_cache_events': 'False', 'version_check': 'True', 'use_colors': 'True', 'write_json': 'True', 'invocation_command': 'dbt run', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:30:45.586434 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:30:45.588066 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.11030871, "process_in_blocks": "0", "process_kernel_time": 0.295868, "process_mem_max_rss": "115888", "process_out_blocks": "8", "process_user_time": 4.818855}
+[0m19:30:45.589025 [debug] [MainThread]: Command `dbt run` failed at 19:30:45.588866 after 0.11 seconds
+[0m19:30:45.589789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9617cf64e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a96187906b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9617cbf230>]}
+[0m19:30:45.590603 [debug] [MainThread]: Flushing usage events
+[0m19:30:52.465001 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:32:55.235846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d29699f770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d29668cd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d295d38a70>]}
+
+
+============================== 19:32:55.241495 | 8f340d2b-b731-42ac-a493-e266de581ecd ==============================
+[0m19:32:55.241495 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:32:55.242683 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'debug': 'False', 'no_print': 'None', 'fail_fast': 'False', 'log_format': 'default', 'use_colors': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/home/ritik/.dbt'}
+[0m19:32:55.243783 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:32:55.245417 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.11063864, "process_in_blocks": "0", "process_kernel_time": 0.320866, "process_mem_max_rss": "115944", "process_out_blocks": "16", "process_user_time": 4.77101}
+[0m19:32:55.246383 [debug] [MainThread]: Command `dbt run` failed at 19:32:55.246222 after 0.11 seconds
+[0m19:32:55.247172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d295ae4ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d296724740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d295eef800>]}
+[0m19:32:55.247990 [debug] [MainThread]: Flushing usage events
+[0m19:33:02.103553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:34:53.920733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be4e7fb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be52fec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be76143b0>]}
+
+
+============================== 19:34:53.926346 | e071a990-21ca-4a33-8c05-1fd015f38130 ==============================
+[0m19:34:53.926346 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:34:53.927522 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'use_colors': 'True', 'static_parser': 'True', 'debug': 'False', 'partial_parse': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'log_format': 'default', 'fail_fast': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'printer_width': '80', 'profiles_dir': '/home/ritik/.dbt', 'use_experimental_parser': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': 'logs', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True'}
+[0m19:34:53.944790 [info ] [MainThread]: dbt version: 1.11.6
+[0m19:34:53.945855 [info ] [MainThread]: python version: 3.12.3
+[0m19:34:53.946971 [info ] [MainThread]: python path: /home/ritik/python/bin/python3
+[0m19:34:53.947938 [info ] [MainThread]: os info: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+[0m19:34:54.267228 [info ] [MainThread]: Using profiles dir at /home/ritik/.dbt
+[0m19:34:54.268206 [info ] [MainThread]: Using profiles.yml file at /home/ritik/.dbt/profiles.yml
+[0m19:34:54.269020 [info ] [MainThread]: Using dbt_project.yml file at /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+[0m19:34:54.270032 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:34:54.271784 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.4549404, "process_in_blocks": "0", "process_kernel_time": 0.38387, "process_mem_max_rss": "132052", "process_out_blocks": "16", "process_user_time": 5.382187}
+[0m19:34:54.273045 [debug] [MainThread]: Command `dbt debug` failed at 19:34:54.272866 after 0.46 seconds
+[0m19:34:54.274066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be4cbac00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be46a3e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x767be458b950>]}
+[0m19:34:54.275089 [debug] [MainThread]: Flushing usage events
+[0m19:34:56.529297 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:35:11.095977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca61632c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca5b98680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca5b98710>]}
+
+
+============================== 19:35:11.101919 | 353b87b7-8ce7-48d1-b2da-caaf47f8de37 ==============================
+[0m19:35:11.101919 [info ] [MainThread]: Running with dbt=1.11.6
+[0m19:35:11.103281 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'profiles_dir': '/home/ritik/.dbt', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'write_json': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error': 'None', 'printer_width': '80', 'version_check': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m19:35:11.121850 [info ] [MainThread]: dbt version: 1.11.6
+[0m19:35:11.123004 [info ] [MainThread]: python version: 3.12.3
+[0m19:35:11.124042 [info ] [MainThread]: python path: /home/ritik/python/bin/python3
+[0m19:35:11.125050 [info ] [MainThread]: os info: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+[0m19:35:11.580375 [info ] [MainThread]: Using profiles dir at /home/ritik/.dbt
+[0m19:35:11.583085 [info ] [MainThread]: Using profiles.yml file at /home/ritik/.dbt/profiles.yml
+[0m19:35:11.585914 [info ] [MainThread]: Using dbt_project.yml file at /home/ritik/Documents/Database Project/DBT/dbt_project.yml
+[0m19:35:11.589476 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:35:11.595143 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.61280704, "process_in_blocks": "0", "process_kernel_time": 0.513335, "process_mem_max_rss": "132168", "process_out_blocks": "0", "process_user_time": 6.607451}
+[0m19:35:11.599641 [debug] [MainThread]: Command `dbt debug` failed at 19:35:11.599019 after 0.62 seconds
+[0m19:35:11.602412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca54e59d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca5b9b440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ca4547b90>]}
+[0m19:35:11.605847 [debug] [MainThread]: Flushing usage events
+[0m19:35:13.584797 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:00:59.841973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c331fa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c32f7740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c38d43b0>]}
+
+
+============================== 23:00:59.864422 | d4faed29-6dfb-4ec7-9fa8-45cead5d62f1 ==============================
+[0m23:00:59.864422 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:00:59.867295 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'debug': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/ritik/.dbt', 'log_cache_events': 'False', 'printer_width': '80', 'introspect': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m23:01:07.182160 [error] [MainThread]: Encountered an error:
+
+[0m23:01:07.191793 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/ritik/python/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/click/termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/ritik/python/lib/python3.12/site-packages/click/termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m23:01:07.195869 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 7.64055, "process_in_blocks": "85192", "process_kernel_time": 0.719048, "process_mem_max_rss": "116320", "process_out_blocks": "8", "process_user_time": 6.939117}
+[0m23:01:07.197819 [debug] [MainThread]: Command `dbt init` failed at 23:01:07.197416 after 7.64 seconds
+[0m23:01:07.199388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c775fb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c247ec00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71a7c29b07d0>]}
+[0m23:01:07.201079 [debug] [MainThread]: Flushing usage events
+[0m23:01:09.332919 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,65 @@
+version: 2
+
+models:
+
+  - name: stg_sales
+    description: "Staging model for sales fact table from the Gold layer."
+
+    columns:
+      - name: order_number
+        description: "Unique identifier of the sales order."
+        tests:
+          - not_null
+
+      - name: product_key
+        description: "Foreign key referencing the product dimension."
+        tests:
+          - not_null
+
+      - name: customer_key
+        description: "Foreign key referencing the customer dimension."
+        tests:
+          - not_null
+
+      - name: sales_amount
+        description: "Total monetary value of the sales transaction."
+
+      - name: quantity
+        description: "Quantity of the product sold."
+
+
+  - name: stg_products
+    description: "Staging model for product dimension data."
+
+    columns:
+      - name: product_key
+        description: "Primary key for the product."
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Name of the product."
+
+      - name: category
+        description: "Product category (NULL values replaced with 'Unknown')."
+
+      - name: subcategory
+        description: "Product subcategory."
+
+      - name: cost
+        description: "Product cost value."
+
+
+  - name: stg_customers
+    description: "Staging model for customer dimension data."
+
+    columns:
+      - name: customer_key
+        description: "Primary key for the customer."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Business identifier for the customer."
