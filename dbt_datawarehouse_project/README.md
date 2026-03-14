@@ -213,35 +213,35 @@ dbt test  →  7/7 tests PASS                      ✅   1.10s
 ### 🔌 DBT Connection Log (`dbt debug`)
 > Shows successful SQL Server connection and adapter configuration.
 
-![DBT Debug Log](assets/dbt_debug_log.png)
+![DBT Debug Log](https://github.com/Ritik574-coder/dbt-datawarehouse-project/blob/main/images/image/dbt_debug_log.png)
 
 ---
 
 ### 🗂️ Project Directory Structure
 > Full directory tree showing all 39 directories and 73 files.
 
-![Project Structure](assets/project_structure.png)
+![Project Structure](https://github.com/Ritik574-coder/dbt-datawarehouse-project/blob/main/images/image/project_structure.png)
 
 ---
 
 ### ▶️ DBT Run — All Models Built
 > All 5 models created successfully: 3 staging views, 1 intermediate view, 1 mart table.
 
-![DBT Run](assets/dbt_run.png)
+![DBT Run](https://github.com/Ritik574-coder/dbt-datawarehouse-project/blob/main/images/image/dbt_run.png.png)
 
 ---
 
 ### ✅ DBT Test — All Tests Passed
 > 7 out of 7 data quality tests passed. `PASS=7 WARN=0 ERROR=0`.
 
-![DBT Test](assets/dbt_test.png)
+![DBT Test](https://github.com/Ritik574-coder/dbt-datawarehouse-project/blob/main/images/image/dbt_test.png.png)
 
 ---
 
-### 📚 DBT Docs Served
+### 📚 DBT Logs
 > Documentation generated and served at `http://localhost:8080`.
 
-![DBT Docs](assets/dbt_docs_serve.png)
+![DBT Logs](https://github.com/Ritik574-coder/dbt-datawarehouse-project/blob/main/images/image/Screenshot%20from%202026-03-14%2019-26-45.png)
 
 ---
 
